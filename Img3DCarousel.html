@@ -2,20 +2,20 @@
 <HTML>
 
 <head>
-	<title>Image Viewer</title>
+	<title>Image 3D Carousel</title>
 	<meta name="author" content="Ian Munster">
-	<meta name="description" content="Img Viewer">
+	<meta name="description" content="Img 3D Carousel">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="img/branding/logo.png">
+	<!-- <link rel="shortcut icon" type="image/png" href="img/branding/logo.png"> -->
 	<link href="style.css" type="text/css" rel="stylesheet">
-	<link href="styleImgViewer.css" type="text/css" rel="stylesheet">
-	<script src="scriptImgViewer.js" defer></script>
+	<link href="styleImg3DCarousel.css" type="text/css" rel="stylesheet">
+	<script src="scriptImg3DCarousel.js" defer></script>
 </head>
 
 <body id="body">
 	<header>
-		<a href="" title=""><img class="logo" src="img/branding/logo_S.png"></a>
+		<a href="" title="Home"></a>
 		<nav>
 			<a href="" title="Favourite">&hearts;</a>
 			<a href="" title="Star">&#9733;</a>
@@ -30,6 +30,7 @@
 	<main>
 		<section>
 			<article>
+				<!-- http://thenewcode.com/690/Simple-CSS-3D-Carousel-Gallery -->
 				<h2>Image View</h2>
 				<div id="container">
 					<div class="counterContainer">
@@ -42,20 +43,29 @@
 					</figure>
 
 					<div id="controls">
-						<button id="prvBtn" class="btn" type="button">&#9664;</button>
-						<input id="slider" type="range" name="index" min="0" max="" />
-						<button id="nxtBtn" class="btn" type="button">&#9654;</button>
+						<button id="prvBtn" class="btn" type="button" onclick="carouselSpin('-')">&#9664;</button>
+						<!-- <input id="slider" type="range" name="index" min="0" max="" /> -->
+						<button id="nxtBtn" class="btn" type="button" onclick="carouselSpin()">&#9654;</button>
 					</div>
 
-					<div id="small carousel">
-						<figure id="album"></figure>
+					<div id="carousel">
+						<figure id="spinner">
+							<img src="img/640x360/img01.jpg" class="thumb">
+							<img src="img/640x360/img02.jpg" class="thumb">
+							<img src="img/640x360/img03.jpg" class="thumb">
+							<img src="img/640x360/img04.jpg" class="thumb">
+							<img src="img/640x360/img05.jpg" class="thumb">
+							<img src="img/640x360/img06.jpg" class="thumb">
+							<img src="img/640x360/img07.jpg" class="thumb">
+							<img src="img/640x360/img08.jpg" class="thumb">
+						</figure>
 					</div>
 				</div>
 			</article>
 		</section>
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<section>
 			<img class="icon" src="img/branding/icon/Face_S.png">
 			<img class="icon" src="img/branding/icon/Tweet_S.png">
@@ -68,7 +78,7 @@
 			<p>Privacy - Disclaimer - Copyright</p>
 			<p>Algemene Voorwaarde</p>
 		</div>
-	</footer>
+	</footer> -->
 </body>
 
 </HTML>

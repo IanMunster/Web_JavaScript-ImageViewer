@@ -1,0 +1,86 @@
+#carousel {
+    border: 1px solid black;
+    perspective: 5000px;
+    /* padding-top: 10%; */
+    /* margin-bottom: 3rem; */
+    overflow: hidden;
+}
+
+#spinner {
+    transform-style: preserve-3d;
+    /* -webkit-transform-origin: 50% 50%; */
+    transform-origin: 50% 50% -50vw;
+    transition: 1s;
+    /* height: 300px; */
+    min-height: 200px;
+}
+
+.thumb {
+    position: absolute;
+    left: 30%;
+    -webkit-transform-origin-z: 50% 50%;
+    transform-origin: 50% 50% -50vw;
+    outline: 1px solid transparent;
+    width: 40%;
+    max-width: 425px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* TO DO fix with JS 
+- Child through build Thumb function
+- Rotation angle through script*/
+.thumb:nth-child(1) {
+    transform: rotateY(0deg);
+}
+.thumb:nth-child(2) {
+    transform: rotateY(45deg);
+}
+.thumb:nth-child(3) {
+    transform: rotateY(90deg);
+}
+.thumb:nth-child(4) {
+    transform: rotateY(135deg);
+}
+.thumb:nth-child(5) {
+    transform: rotateY(180deg);
+}
+.thumb:nth-child(6) {
+    transform: rotateY(225deg);
+}
+.thumb:nth-child(7) {
+    transform: rotateY(270deg);
+}
+.thumb:nth-child(8) {
+    transform: rotateY(315deg);
+}
+
+/* Laptops */
+@media screen and (max-width: 960px) {
+    #spinner {
+        transform-style: preserve-3d;
+        /* -webkit-transform-origin: 50% 50%; */
+        transform-origin: 50% 50% -50vw;
+        transition: 1s;
+        /* height: 300px; */
+        min-height: 200px;
+    }
+    
+    .thumb {
+        position: absolute;
+        left: 30%;
+        -webkit-transform-origin-z: 50% 50%;
+        transform-origin: 50% 50% -50vw;
+        outline: 1px solid transparent;
+        width: 40%;
+        max-width: 425px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {}
