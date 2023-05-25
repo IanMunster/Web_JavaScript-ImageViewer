@@ -4,6 +4,7 @@
     /* padding-top: 10%; */
     /* margin-bottom: 3rem; */
     overflow: hidden;
+    border: 1px solid purple;
 }
 
 #spinner {
@@ -13,6 +14,7 @@
     transition: 1s;
     /* height: 300px; */
     min-height: 200px;
+    border: 1px solid red;
 }
 
 .thumb {
@@ -25,6 +27,7 @@
     max-width: 425px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border: 1px solid green;
 }
 
 /* TO DO fix with JS 

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+	<title>Image 3D Carousel</title>
+	<meta name="author" content="Ian Munster">
+	<meta name="description" content="Img 3D Carousel">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="shortcut icon" type="image/png" href="img/branding/logo.png"> -->
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="styleImgMerryGoRound.css" type="text/css" rel="stylesheet">
+	<script src="scriptImgMerryGoRound.js" defer></script>
+</head>
+
+<body id="body">
+	<header>
+		<a href="" title="Home"></a>
+		<nav>
+			<a href="" title="Favourite">&hearts;</a>
+			<a href="" title="Star">&#9733;</a>
+			<a href="" title="Contact">&#9993;</a>
+			<a href="" title="FullScreen">&#9974;</a>
+			<a href="" title="Construct">&#128736;</a>
+			<a href="" title="Theme">&#9680;</a>
+			<a href="" title="Menu">&equiv;</a>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<article>
+				<!-- http://thenewcode.com/690/Simple-CSS-3D-Carousel-Gallery -->
+				<!-- https://codepen.io/dudleystorey/pen/DvZjLz -->
+				<!-- https://codepen.io/dudleystorey/pen/ndJPgz -->
+				<!--
+				Improvements:
+					- bug in desktop and mobile Safari, which displaces the transform-origin-z coordinate for the gallery, pushing it forward in the browser.
+					- IE 10+ displays the carousel incorrectly due to its lack of support for transform-style.
+					- Display at small viewport sizes needs to be improved; Add swipe gesture support
+					- As the number of images in the gallery increases, the radius of the carousel should increase to fit them all.
+					- goal turn CSS 3D Carousel Gallery into automated JavaScript: this will mean creating display fallbacks for earlier versions of IE and older browsers.
+				-->
+				<h2>Image View</h2>
+				<div id="Container">
+					<div id="MerryGoRound">
+						<div id="Spinner">
+
+							<figure class="thumb">
+								<img src="img/640x360/img01.jpg"alt="img01">
+								<figcaption>Image 1</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img02.jpg"alt="img02">
+								<figcaption>Image 2</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img03.jpg"alt="img03">
+								<figcaption>Image 3</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img04.jpg"alt="img04">
+								<figcaption>Image 4</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img05.jpg"alt="img05">
+								<figcaption>Image 5</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img06.jpg"alt="img06">
+								<figcaption>Image 6</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img07.jpg"alt="img07">
+								<figcaption>Image 7</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img08.jpg"alt="img08">
+								<figcaption>Image 8</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img09.jpg"alt="img09">
+								<figcaption>Image 9</figcaption>
+							</figure>
+
+							<figure class="thumb">
+								<img src="img/640x360/img10.jpg"alt="img10">
+								<figcaption>Image 10</figcaption>
+							</figure>
+
+						</div>
+
+					</div>
+
+					<div id="Controls">
+						<button id="PrvBtn" class="btn" type="button">&#9664;</button>
+						<button id="NxtBtn" class="btn" type="button">&#9654;</button>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<!-- <footer>
+		<section>
+			<img class="icon" src="img/branding/icon/Face_S.png">
+			<img class="icon" src="img/branding/icon/Tweet_S.png">
+			<img class="icon" src="img/branding/icon/YouT_S.png">
+			<img class="icon" src="img/branding/icon/Gogl_S.png">
+			<img class="icon" src="img/branding/icon/Pint_S.png">
+		</section>
+		
+		<div id="disclaim">
+			<p>Privacy - Disclaimer - Copyright</p>
+			<p>Algemene Voorwaarde</p>
+		</div>
+	</footer> -->
+</body>
+
+</HTML>

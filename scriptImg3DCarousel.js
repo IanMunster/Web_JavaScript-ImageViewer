@@ -7,6 +7,6 @@ function carouselSpin(operator) {
     } else {
         angle = angle +45;
     }
-    spinner.setAttribute("style", "-webkit-transform: rotateY("+angle+"deg); -moz-transform: rotateY("+angle+"deg); -transform: rotateY("+angle+"deg);");
+    spinner.style.transform = 'rotateY(' + angle + 'deg)';
                         
 }
