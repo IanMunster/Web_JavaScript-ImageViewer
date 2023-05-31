@@ -38,11 +38,11 @@ for (let p = 0; p < previewBox.length; p++) {
         //console.log("Preview: " + p);
         // TO DO: Define Projects Elsewhere
         if (p == 0) {
-            projects[p].img = ["img1", "img2", "img3", "img4", "img5", "img6"];
+            projects[p].img = ["5terre", "forest", "lights", "mountains", "nature", "snow"];
             projects[p].caption = ["Cinque Terre", "Northern Lights", "Mountain", "Nature", "Snow", "Forest"];
         } else if (p == 1) {
-            projects[p].img = ["img6", "img5", "img4", "img3", "img2", "img1"];
-            projects[p].caption = ["Forest", "Snow", "Nature", "Mountain", "Northern Lights", "Cinque Terre"];
+            projects[p].img = ["snow", "nature", "mountains", "lights", "forest", "5terre"];
+            projects[p].caption = ["Snow", "Nature", "Mountain", "Northern Lights", "Forest", "Cinque Terre"];
         }
         //console.log(projects[p].img[0]);
 
@@ -52,7 +52,7 @@ for (let p = 0; p < previewBox.length; p++) {
 
         //var img = previewBox[p].getElementsByClassName("preview-Img");
 
-        modalMainImg.src = "img/big/" + projects[p].img[0] + "_wide.jpg";
+        modalMainImg.src = "../img/big/img_" + projects[p].img[0] + "_wide.jpg";
         captionText.innerHTML = projects[p].caption[0];
         //console.log(modalMainImg.src + " " + captionText.innerHTML);
 
@@ -60,7 +60,7 @@ for (let p = 0; p < previewBox.length; p++) {
         var thumb = [];
         for (let i = 0; i < imgs.length; i++) {
             // Append Img Names with Folder and Extension
-            thumb[i] = "img/thumb/" + imgs[i] + ".jpg";
+            thumb[i] = "../img/thumb/img_" + imgs[i] + ".jpg";
         }
 
 

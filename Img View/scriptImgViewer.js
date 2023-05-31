@@ -6,11 +6,11 @@ var tabletY = 960,
 	mobileY = 720;
 
 // Folder structure
-var folderXL = "img/1920x1080/",
-	folderL = "img/1280x720/",
-	folderM = "img/854x480/",
-	folderS = "img/640x360/",
-	folderXS = "img/426x240/";
+var folderXL = "../img/1920x1080/",
+	folderL = "../img/1280x720/",
+	folderM = "../img/854x480/",
+	folderS = "../img/640x360/",
+	folderXS = "../img/426x240/";
 
 // Set Default Images to Smallest Folder
 var imgL = folderS,

@@ -34,9 +34,10 @@
     padding: 0;
     height: fit-content;
     overflow: hidden;
-    perspective: 10000px;
+    perspective: 5000px;
     font-size: 0;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
+    border-radius: 50px;
 }
 
 #Spinner {
@@ -57,8 +58,8 @@
     -webkit-transform-origin: 50% 50% -600px;
     transform-origin: 50% 50% -600px;
     transition: 1s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; */
     outline: 1px solid transparent;
 
     /* border: 1px solid green; */
