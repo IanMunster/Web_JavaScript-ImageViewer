@@ -56,6 +56,33 @@
     transform: rotateY(315deg);
 }
 
+h2 {
+	text-align: center;
+	display: none;
+}
+
+.logo {
+	position: relative;
+	border-radius: 0 0 100% 100%;
+}
+
+.icon {
+	border-radius: 0.5em;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.icon:hover {
+	cursor: pointer;
+	opacity: 0.25;
+}
+
+.icon:active {
+	opacity: 0.5;
+}
+
 /* Laptops */
 @media screen and (max-width: 960px) {
     #spinner {
@@ -84,4 +111,8 @@
 @media screen and (max-width: 720px) {}
 
 /* Smartphones */
-@media screen and (max-width: 420px) {}
+@media screen and (max-width: 420px) {
+	.logo {
+		left: 0.5em;
+	}
+}
